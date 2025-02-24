@@ -5,7 +5,7 @@ import Logo from "../Logo/Logo";
 
 function Footer() {
     return (
-        <div className={styles.Wrapper}>
+        <footer className={styles.Wrapper}>
             <div>
                 <Logo />
                 <div>Веб-разработка и усиление IT-команд</div>
@@ -19,7 +19,7 @@ function Footer() {
                 <div>hello@cyberia.studio</div>
                 <div>hello@cyberia.studio</div>
             </div>
-        </div>
+        </footer>
     );
 }
 

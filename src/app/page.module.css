@@ -1,7 +1,8 @@
 .main {
-    min-height: calc(100dvh - 220px);
-    margin: 50px 150px 0 150px;
+    min-height: calc(100dvh - 400px);
+    margin: 0 150px 0 150px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }

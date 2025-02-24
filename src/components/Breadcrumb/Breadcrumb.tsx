@@ -4,7 +4,7 @@ import styles from './Breadcrumb.module.css'
 
 function Breadcrumb() {
   return (
-    <div className={styles.Wrapper}>Главная / Кейсы</div>
+    <aside className={styles.Wrapper}>Главная / Кейсы</aside>
   )
 }
 

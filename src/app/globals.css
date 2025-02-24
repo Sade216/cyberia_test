@@ -26,14 +26,15 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
+/* TODO: переделать media запросы */
 @media (max-width: 1024px) {
-    html {
+    body {
         margin: 0 50px;
     }
 }
 
 @media (max-width: 768px) {
-    html {
+    body {
         margin: 0 25px;
     }
 }

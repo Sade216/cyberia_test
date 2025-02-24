@@ -1,10 +1,7 @@
-
-import styles from './Cases.module.css'
+import styles from "./Cases.module.css";
 
 function Cases() {
-  return (
-    <div className={styles.Wrapper}>Cases</div>
-  )
+    return <div className={styles.Wrapper}>Cases</div>;
 }
 
-export default Cases
+export default Cases;
