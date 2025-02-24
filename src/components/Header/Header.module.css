@@ -1,0 +1,65 @@
+.Wrapper {
+    min-height: 120px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 150px;
+}
+.Logo {
+    display: flex;
+    color: white;
+}
+.Logo svg {
+    height: 100%;
+    width: 140px;
+}
+.Logo:hover {
+    font-size: 24px;
+    color: var(--accent);
+}
+.Links {
+    display: flex;
+    gap: 30px;
+}
+
+.Link {
+    color: var(--text);
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.Link:hover {
+    color: var(--accent);
+}
+
+.ToolBar {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+.LangToggle {
+    display: flex;
+    flex-direction: row;
+}
+.LangToggle a {
+    color: var(--text);
+    text-decoration: none;
+}
+
+.LangToggle a:hover {
+    color: var(--accent);
+}
+
+@media (max-width: 1024px) {
+    .Links {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    html {
+        margin: 0 25px;
+    }
+}

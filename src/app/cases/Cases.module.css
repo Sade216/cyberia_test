@@ -1,4 +1,4 @@
-.main {
+.Wrapper{
     min-height: calc(100dvh - 220px);
     margin: 50px 150px 0 150px;
     display: flex;
