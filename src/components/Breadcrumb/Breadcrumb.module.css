@@ -1,3 +1,41 @@
-.Wrapper{
+.Wrapper {
     margin: 0 150px;
+}
+
+.Breadcrumb {
+    background-color: transparent;
+    padding: 0;
+    margin-bottom: 1rem;
+    font-family: Arial, sans-serif; /* Пример шрифта */
+}
+
+.BreadcrumbItem {
+    display: inline-block;
+    margin-right: 0.5rem;
+}
+/* TODO: стили сделать переиспользуемыми */
+.BreadcrumbLinkMain{
+    color: var(--breadcrumb);
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.BreadcrumbLinkMain:hover {
+    color: var(--accent);
+}
+
+.BreadcrumbLink {
+    color: var(--breadcrumb-active);
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.BreadcrumbLink:hover {
+    color: var(--accent);
+}
+.Separator {
+    margin: 0 5px;
+    color: var(--breadcrumb);
 }
