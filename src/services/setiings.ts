@@ -1,28 +1,13 @@
 import axios from "axios";
 
-export function SetupAxios() {
-    axios.defaults.baseURL = process.env.API_URL;
-}
+export const api = axios.create({
+    baseURL: process.env.NEXT_PUBLIC_API_URL,
+});
 
-export const paths = [
-    {
-        path: "/agency",
-        lable: "Агенство",
-    },
-    {
-        path: "/services",
-        lable: "Услуги",
-    },
-    {
-        path: "/cases",
-        lable: "Кейсы",
-    },
-    {
-        path: "/blog",
-        lable: "Блог",
-    },
-    {
-        path: "/contacts",
-        lable: "Контакты",
-    },
-];
+export const paths = {
+    agency: { path: "/agency", label: "Агенство" },
+    services: { path: "/services", label: "Услуги" },
+    cases: { path: "/cases", label: "Кейсы" },
+    blog: { path: "/blog", label: "Блог" },
+    contacts: { path: "/contacts", label: "Контакты" },
+};
