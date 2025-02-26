@@ -1,11 +1,13 @@
-import styles from "./page.module.css";
+import Container from "@/components/Container/Container";
 import Link from "next/link";
 
 export default function Home() {
     return (
-        <main className={styles.main}>
-            <h1>Главная</h1>
-            <Link href='/cases'>Кейсы</Link>
+        <main>
+            <Container>
+                <h1>Главная</h1>
+                <Link href="/cases">Кейсы</Link>
+            </Container>
         </main>
     );
 }

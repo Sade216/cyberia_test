@@ -1,0 +1,5 @@
+.Container{
+    min-height: calc(100dvh - 400px);
+    margin: 50px 150px 0 150px;
+    display: flex;
+}
