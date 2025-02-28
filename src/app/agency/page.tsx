@@ -2,11 +2,11 @@ import Container from "@/components/Container/Container";
 
 function Agency() {
     return (
-        <div>
-            <Container>
+        <main>
+            <Container forPage>
                 <h1>Агенство</h1>
             </Container>
-        </div>
+        </main>
     );
 }
 

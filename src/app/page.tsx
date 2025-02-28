@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function Home() {
     return (
         <main>
-            <Container>
+            <Container forPage>
                 <h1>Главная</h1>
                 <Link href="/cases">Кейсы</Link>
             </Container>

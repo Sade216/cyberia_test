@@ -4,7 +4,7 @@ import React from "react";
 function Blog() {
     return (
         <main>
-            <Container>
+            <Container forPage>
                 <h1>Блог</h1>
             </Container>
         </main>

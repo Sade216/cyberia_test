@@ -4,7 +4,7 @@ import React from "react";
 function Services() {
     return (
         <main>
-            <Container>
+            <Container forPage>
                 <h1>Услуги</h1>
             </Container>
         </main>
