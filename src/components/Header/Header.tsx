@@ -2,35 +2,37 @@ import React from "react";
 import Link from "next/link";
 import { paths } from "@/services/setiings";
 
+import Container from "../Container/Container";
 import styles from "./Header.module.css";
-import Logo from "../Logo/Logo";
+import Logo from "../Icons/LogoIcon";
 
 function Header() {
     return (
         <header className={styles.Wrapper}>
-            <Link
-                href="/"
-                className={styles.Logo}>
-                <Logo />
-            </Link>
-            <nav className={styles.Links}>
-                {paths.map((path, key) => (
-                    <Link
-                        href={path.path}
-                        key={key}
-                        className={styles.Link}>
-                        {path.lable}
-                    </Link>
-                ))}
-            </nav>
-            <div className={styles.ToolBar}>
-                <div>Switch</div>
-                <div className={styles.LangToggle}>
-                    <a href="#">EN</a>
-                    <div>/</div>
-                    <a href="#">RU</a>
+            <Container className={styles.Container}>
+                <Link
+                    href="/"
+                    className={styles.Logo}>
+                    <Logo />
+                </Link>
+                <nav className={styles.Links}>
+                    {Object.entries(paths).map(([key, { label, path }]) => (
+                        <Link
+                            className={styles.Link}
+                            key={key}
+                            href={path}>
+                            {label}
+                        </Link>
+                    ))}
+                </nav>
+                <div className={styles.ToolBar}>
+                    <div className={styles.LangToggle}>
+                        <a href="#">EN</a>
+                        <div>/</div>
+                        <a href="#">RU</a>
+                    </div>
                 </div>
-            </div>
+            </Container>
         </header>
     );
 }

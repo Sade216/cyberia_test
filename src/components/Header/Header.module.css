@@ -1,10 +1,12 @@
 .Wrapper {
-    min-height: 120px;
+    background-color: transparent;
+}
+.Container{
+    min-height: 140px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin: 0 150px;
 }
 .Logo {
     display: flex;
@@ -55,6 +57,9 @@
 @media (max-width: 1024px) {
     .Links {
         display: none;
+    }
+    .Wrapper{
+        background-color: var(--background) ;
     }
 }
 
