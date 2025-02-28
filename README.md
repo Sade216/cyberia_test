@@ -15,10 +15,6 @@ git clone https://github.com/Sade216/cyberia_test.git
 ```bash
 npm install
 # или
-yarn install
-# или
-pnpm install
-# или
 bun install
 ```
 
@@ -34,32 +30,28 @@ API_URL = "URL_сервера"
 
 ## Запуск проекта
 
+Обычный запуск:
+
+```bash
+npm run build
+# или
+bun run build
+
+# после
+
+npm start
+# или
+bun start
+```
+
 Запуск dev сервера:
 
 ```bash
 npm run dev
-# или
-yarn dev
-# или
-pnpm dev
 # или
 bun dev
 ```
 
 Теперь сервер запущен по адресу [http://localhost:3000](http://localhost:3000) (В случае если порт **3000** занят, он автоматически измениться на другой доступный, об этом так же будет указано при запуске проекта).
 
-
-***
-
-## Ссылки:
-[Next.js](https://nextjs.org) проект, развернутый при помощи - [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
-<br/>
-[Zod](https://zod.dev/).
-<br/>
-[Redux](https://redux.js.org/introduction/getting-started).
-<br/>
-[Redux Toolkit](https://redux.js.org/introduction/why-rtk-is-redux-today).
-<br/>
-[axios](https://axios-http.com/docs/intro).
-
-
+При запуске в **`"dev"`** режиме всё содержимое useEffect может дублироваться. В соответствии с оффициальной документацией, из-за использования [React.Strict](https://react.dev/reference/react/StrictMode#fixing-bugs-found-by-double-rendering-in-development). В NextJS этот параметр по умолчанию включен, и настраивается в **next.config.ts**
