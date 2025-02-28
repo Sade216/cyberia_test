@@ -4,14 +4,15 @@ import styles from './Container.module.css'
 
 type Props = {
     children: ReactNode,
-    className?: string
+    className?: string,
+    forPage?: boolean,
 }
 
-function Container({children, className}: Props) {
+function Container({children, className, forPage = false}: Props) {
   return (
-    <div className={`${styles.Container} ${className ? className: ''}`}>
+    <section className={`${styles.Container} ${forPage && styles.PageContainer} ${className && className}`}>
         {children}
-    </div>
+    </section>
   )
 }
 

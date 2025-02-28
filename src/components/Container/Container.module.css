@@ -1,5 +1,25 @@
 .Container{
-    min-height: calc(100dvh - 400px);
-    margin: 50px 150px 0 150px;
-    display: flex;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+.PageContainer{
+    margin-top: 100px;
+    /* С учётом header'a, footer'a и breadcrumb'a*/
+    min-height: calc(100dvh - 686px);
+}
+
+
+@media (max-width: 1024px) {
+    .Container {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+}
+
+@media (max-width: 768px) {
+    .Container {
+        margin-left: 25px;
+        margin-right: 25px;
+    }
 }
