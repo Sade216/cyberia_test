@@ -5,6 +5,7 @@ import { usePathname } from "next/navigation";
 import styles from "./Breadcrumb.module.css";
 
 import { paths } from "@/services/setiings";
+import Container from "../Container/Container";
 
 const Breadcrumb = () => {
     const pathname = usePathname();
@@ -32,32 +33,32 @@ const Breadcrumb = () => {
     const breadcrumbs = getBreadcrumbs(pathname);
 
     return (
-        <nav
-            aria-label="breadcrumb"
-            className={styles.Wrapper}>
-            <ol className={styles.Breadcrumb}>
-                <li className={styles.BreadcrumbItem}>
-                    <Link
-                        href="/"
-                        className={styles.BreadcrumbLinkMain}>
-                        Главная
-                    </Link>
-                </li>
-                {breadcrumbs.map((breadcrumb, index) => (
-                    <li
-                        key={index}
-                        className={styles.BreadcrumbItem}>
-                        <>
-                            <span className={styles.Separator}> / </span>
-                            <Link
-                                href={breadcrumb.href}
-                                className={styles.BreadcrumbLink}>
-                                {breadcrumb.label}
-                            </Link>
-                        </>
+        <nav>
+            <Container>
+                <ol className={styles.Breadcrumb}>
+                    <li className={styles.BreadcrumbItem}>
+                        <Link
+                            href="/"
+                            className={styles.BreadcrumbLinkMain}>
+                            Главная
+                        </Link>
                     </li>
-                ))}
-            </ol>
+                    {breadcrumbs.map((breadcrumb, index) => (
+                        <li
+                            key={index}
+                            className={styles.BreadcrumbItem}>
+                            <>
+                                <span className={styles.Separator}> / </span>
+                                <Link
+                                    href={breadcrumb.href}
+                                    className={styles.BreadcrumbLink}>
+                                    {breadcrumb.label}
+                                </Link>
+                            </>
+                        </li>
+                    ))}
+                </ol>
+            </Container>
         </nav>
     );
 };

@@ -1,12 +1,8 @@
-.Wrapper {
-    margin: 0 150px;
-}
-
 .Breadcrumb {
     background-color: transparent;
     padding: 0;
-    margin-bottom: 1rem;
-    font-family: Arial, sans-serif; /* Пример шрифта */
+    font-family: Arial, sans-serif;
+    margin-top: 25px;
 }
 
 .BreadcrumbItem {
