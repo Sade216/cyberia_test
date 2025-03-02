@@ -7,7 +7,7 @@ import { sendFeedback } from "@/lib/projectsApi";
 import { useAppDispatch } from "@/lib/store/hooks";
 import { TFeedbackResponse } from "@/services/types";
 
-import FeedbackImage from '@/assets/Group 1347.png'
+import FeedbackImage from '@/assets/Group.svg'
 
 import styles from "./FeedbackForm.module.css";
 import Input from "@/components/Form/Input/Input";
