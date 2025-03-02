@@ -20,7 +20,11 @@
     font-size: 24px;
     color: var(--accent);
 }
-.Links {
+.Links{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
     display: flex;
     gap: 30px;
 }
@@ -41,18 +45,6 @@
     flex-direction: row;
     gap: 15px;
 }
-.LangToggle {
-    display: flex;
-    flex-direction: row;
-}
-.LangToggle a {
-    color: var(--text);
-    text-decoration: none;
-}
-
-.LangToggle a:hover {
-    color: var(--accent);
-}
 
 @media (max-width: 1024px) {
     .Links {
@@ -65,4 +57,149 @@
 
 @media (max-width: 768px) {
     
+}
+
+
+.MenuButton{
+    display: flex;
+    background-color: transparent;
+    border: none;
+    color: white;
+    padding: 10px;
+}
+
+.MenuButton:hover{
+    background-color: #0000004b;
+    border-radius: 5px;
+    color: var(--accent);
+}
+
+
+
+
+.Drawer {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: 100dvh;
+    background: var(--background);
+    transition: right 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    padding: 80px 25px;
+    z-index: 100;
+}
+
+.Drawer.Open {
+    right: 0;
+}
+
+.Backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 99;
+    display: none;
+}
+
+.Backdrop.ShowBackdrop {
+    display: block;
+}
+
+.Burger {
+    position: fixed;
+    top: 55px;
+    right: 25px;
+    width: 30px;
+    height: 23px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    z-index: 101;
+}
+
+.Burger div {
+    width: 100%;
+    height: 3px;
+    border-radius: 5px;
+    background: var(--text);
+    transition: 0.3s;
+}
+
+.Burger.Open div:nth-child(1) {
+    transform: translateY(10px) rotate(45deg);
+}
+
+.Burger.Open div:nth-child(2) {
+    opacity: 0;
+}
+
+.Burger.Open div:nth-child(3) {
+    transform: translateY(-10px) rotate(-45deg);
+}
+
+.Menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.Menu li {
+    display: flex;
+    height: 60px;
+    /* padding: 20px 0; */
+}
+
+.Menu a {
+    align-content: center;
+    text-decoration: none;
+    color: var(--text);
+    font-size: 18px;
+    font-weight: 400;
+    transition: color 0.2s;
+    width: 100%;
+    height: 100%;
+}
+
+.Menu a:hover {
+    color: #0070f3;
+}
+
+@media (max-width: 1024px){
+    .Burger{
+        right: 100px;
+    }
+}
+@media (max-width: 768px){
+    .Burger{
+        right: 25px;
+    }
+}
+
+.Separator{
+    content: '';
+    height: 1px;
+    background-color: #2B2D3A;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.MenuContacts{
+    color: var(--breadcrumb);
+}
+.MenuContacts h3{
+    font-weight: 300;
+}
+.MenuContacts ul{
+    list-style: none;
+    margin-top: 40px;
+}
+
+.MenuContacts ul li{
+    margin-top: 20px;
 }
