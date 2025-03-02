@@ -1,9 +1,15 @@
 :root {
-    --background: #000000;
+    --background: #20212C;
     --foreground: #c4d2e3;
     --text: #ffffff;
     --accent: #2d76f9;
+    --accent-semi: #6b9fff;
+    --accent-half: #2d74f97a;
     --background-linear: linear-gradient(180deg, #24252f, #242530);
+    --breadcrumb: #9AA8BA;
+    --breadcrumb-active: #9AA8BA;
+    --button-bg: #313341;
+    --shadow: #171b2c63;
 }
 
 * {
@@ -17,6 +23,8 @@ body {
     max-width: 100vw;
     overflow-x: hidden;
     background: var(--background-linear) !important;
+    font-weight: 400;
+    letter-spacing: 0.5px;
 }
 
 body {
@@ -26,15 +34,26 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
-/* TODO: переделать media запросы */
-@media (max-width: 1024px) {
-    body {
-        margin: 0 50px;
-    }
+/* TODO: стили для h заголовков */
+h1{
+    font-size: 48px;
+}
+h2{
+    font-size: 24px;
+}
+h3{
+
+}
+h4{
+
 }
 
-@media (max-width: 768px) {
-    body {
-        margin: 0 25px;
+/* TODO: переделать media запросы */
+@media (max-width: 1024px) {
+    h1{
+        font-size: 21px;
+    }
+    h2{
+        font-size: 12px;
     }
 }
