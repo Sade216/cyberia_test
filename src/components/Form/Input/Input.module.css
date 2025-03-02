@@ -1,0 +1,32 @@
+.Wrapper{
+    position: relative;
+    border: 1px solid white;
+    border-radius: 8px;
+    padding: 10px;
+    width: 100%;
+    min-height: 60px;
+}
+.Label{
+    position: absolute;
+    top: -10px;
+    left: 25px;
+    background-color: #242530;
+    padding: 0 10px;
+    font-weight: 200;
+}
+.Input{
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    color: var(--text);
+    padding: 10px 10px;
+    height: 100%;
+    font-weight: 400;
+    font-size: 18px;
+    font-family: inherit;
+    letter-spacing: inherit;
+}
+
+.Input:focus{
+    outline: none;
+}
