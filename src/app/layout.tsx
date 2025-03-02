@@ -8,7 +8,6 @@ import { Fira_Sans_Condensed } from "next/font/google";
 import "./globals.css";
 import StoreProvider from "./StoreProvider";
 
-//TODO: проверить fonts
 const FiraSansCondensed = Fira_Sans_Condensed({
     weight: ["200", "300", "400", "700"],
     subsets: ["latin"],

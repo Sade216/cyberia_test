@@ -34,21 +34,13 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
-/* TODO: стили для h заголовков */
 h1{
     font-size: 48px;
 }
 h2{
     font-size: 24px;
 }
-h3{
 
-}
-h4{
-
-}
-
-/* TODO: переделать media запросы */
 @media (max-width: 1024px) {
     h1{
         font-size: 21px;
