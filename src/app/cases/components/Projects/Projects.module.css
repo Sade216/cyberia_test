@@ -1,0 +1,59 @@
+.TabsContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.Tabs {
+    margin: 50px 0;
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.TabButton {
+    color: var(--text);
+    padding: 10px 15px;
+    border-radius: 7px;
+    border: none;
+    background: var(--button-bg);
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 18px;
+    box-shadow: 8px 15px 29px 0px var(--shadow);
+}
+
+.TabButton:hover {
+    color: var(--accent-semi);
+}
+
+.active {
+    background-color: var(--accent);
+}
+
+.TabContent {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 30px;
+    column-gap: 40px;
+    font-size: 16px;
+}
+
+@media (max-width: 1024px) {
+    .TabContent {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .Tabs {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+    .TabContent {
+        grid-template-columns: 1fr;
+    }
+    .TabButton{
+        font-size: 12px;
+    }
+}
