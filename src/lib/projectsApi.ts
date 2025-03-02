@@ -61,7 +61,7 @@ export const sendFeedback = createAsyncThunk<TFeedbackResponse, TFeedback, { rej
                     }
                     formattedErrors[field].push(zodError.message);
                 });
-                return rejectWithValue({message: "Некорректные данные формы", errors: formattedErrors});
+                return rejectWithValue({message: "Некорректные данные формы:", errors: formattedErrors});
             }
 
             const response = await api.post("/feedbacks",{ signal }, {params: parsedData.data});
