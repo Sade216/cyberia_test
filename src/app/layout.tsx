@@ -14,8 +14,8 @@ const FiraSansCondensed = Fira_Sans_Condensed({
 });
 
 export const metadata: Metadata = {
-    title: "Cyberia test",
-    description: "Test app",
+    title: "Главная",
+    description: "Главная страница",
 };
 
 export default function RootLayout({
