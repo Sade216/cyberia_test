@@ -1,13 +1,14 @@
 .Wrapper {
     background-color: transparent;
 }
-.Container{
+.Container {
     min-height: 140px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
+
 .Logo {
     display: flex;
     color: white;
@@ -20,7 +21,8 @@
     font-size: 24px;
     color: var(--accent);
 }
-.Links{
+
+.Links {
     list-style: none;
     margin: 0;
     padding: 0;
@@ -28,14 +30,12 @@
     display: flex;
     gap: 30px;
 }
-
 .Link {
     color: var(--text);
     text-decoration: none;
     font-size: 18px;
     font-weight: 400;
 }
-
 .Link:hover {
     color: var(--accent);
 }
@@ -46,36 +46,18 @@
     gap: 15px;
 }
 
-@media (max-width: 1024px) {
-    .Links {
-        display: none;
-    }
-    .Wrapper{
-        background-color: var(--background) ;
-    }
-}
-
-@media (max-width: 768px) {
-    
-}
-
-
-.MenuButton{
+.MenuButton {
     display: flex;
     background-color: transparent;
     border: none;
     color: white;
     padding: 10px;
 }
-
-.MenuButton:hover{
+.MenuButton:hover {
     background-color: #0000004b;
     border-radius: 5px;
     color: var(--accent);
 }
-
-
-
 
 .Drawer {
     position: fixed;
@@ -90,7 +72,6 @@
     padding: 80px 25px;
     z-index: 100;
 }
-
 .Drawer.Open {
     right: 0;
 }
@@ -105,7 +86,6 @@
     z-index: 99;
     display: none;
 }
-
 .Backdrop.ShowBackdrop {
     display: block;
 }
@@ -122,7 +102,6 @@
     cursor: pointer;
     z-index: 101;
 }
-
 .Burger div {
     width: 100%;
     height: 3px;
@@ -148,13 +127,10 @@
     padding: 0;
     margin: 0;
 }
-
 .Menu li {
     display: flex;
     height: 60px;
-    /* padding: 20px 0; */
 }
-
 .Menu a {
     align-content: center;
     text-decoration: none;
@@ -165,41 +141,46 @@
     width: 100%;
     height: 100%;
 }
-
 .Menu a:hover {
     color: #0070f3;
 }
 
-@media (max-width: 1024px){
-    .Burger{
-        right: 100px;
-    }
-}
-@media (max-width: 768px){
-    .Burger{
-        right: 25px;
-    }
-}
-
-.Separator{
-    content: '';
+.Separator {
+    content: "";
     height: 1px;
-    background-color: #2B2D3A;
+    background-color: #2b2d3a;
     width: 100%;
     margin: 20px 0;
 }
 
-.MenuContacts{
+.MenuContacts {
     color: var(--breadcrumb);
 }
-.MenuContacts h3{
+.MenuContacts h3 {
     font-weight: 300;
 }
-.MenuContacts ul{
+.MenuContacts ul {
     list-style: none;
     margin-top: 40px;
 }
 
-.MenuContacts ul li{
+.MenuContacts ul li {
     margin-top: 20px;
+}
+
+@media (max-width: 1024px) {
+    .Links {
+        display: none;
+    }
+    .Wrapper {
+        background-color: var(--background);
+    }
+    .Burger {
+        right: 100px;
+    }
+}
+@media (max-width: 768px) {
+    .Burger {
+        right: 25px;
+    }
 }

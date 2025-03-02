@@ -17,7 +17,7 @@ function ProjectCard({ className, data }: TCardProps) {
             <Image
                 loader={() => data.image}
                 src={data.image}
-                alt="Food Image"
+                alt="food-image"
                 width={300}
                 height={300}
                 unoptimized
