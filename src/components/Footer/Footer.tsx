@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import { paths } from "@/services/setiings";
+import { paths } from "@/services/settings";
 
 import Container from "../Container/Container";
 import styles from "./Footer.module.css";

@@ -4,7 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import styles from "./Breadcrumb.module.css";
 
-import { paths } from "@/services/setiings";
+import { paths } from "@/services/settings";
 import Container from "../Container/Container";
 
 const Breadcrumb = () => {
