@@ -23,7 +23,7 @@ bun install
 Для начала работы необходимо обозначить **env** переменные. Для этого в корне проекта необходимо создать файл <code>**.env**</code> и указать следующие значения:
 
 ```bash
-API_URL = "URL_сервера"
+API_URL = "https://YOUR_SERVER.com/api/v1"
 ```
 
 ***
@@ -44,6 +44,9 @@ npm start
 bun start
 ```
 
+> [!NOTE]  
+> При запуске в **`dev`** режиме некоторое содержимое useEffect (запросы) может дублироваться. В соответствии с оффициальной документацией, из-за использования [React.Strict в `dev` режиме](https://react.dev/reference/react/StrictMode#fixing-bugs-found-by-double-rendering-in-development). В NextJS этот параметр по умолчанию включен, и настраивается в **next.config.ts**
+
 Запуск dev сервера:
 
 ```bash
@@ -51,8 +54,5 @@ npm run dev
 # или
 bun dev
 ```
-
-> [!NOTE]  
-> При запуске в **`dev`** режиме некоторое содержимое useEffect (запросы) может дублироваться. В соответствии с оффициальной документацией, из-за использования [React.Strict в `dev` режиме](https://react.dev/reference/react/StrictMode#fixing-bugs-found-by-double-rendering-in-development). В NextJS этот параметр по умолчанию включен, и настраивается в **next.config.ts**
 
 Теперь сервер запущен по адресу [http://localhost:3000](http://localhost:3000) (В случае если порт **3000** занят, он автоматически измениться на другой доступный, об этом так же будет указано при запуске проекта).
