@@ -1,0 +1,60 @@
+.Wrapper{
+    margin: 100px 0;
+}
+.Title{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 25px;
+    margin: 50px 0;
+    letter-spacing: 1px;
+}
+.Form{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.Inputs{
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    width: 100%;
+}
+.SubmitButton{
+    align-self: center;
+    background-color: var(--accent);
+    color: var(--text);
+    border: none;
+    border-radius: 85px;
+    padding: 15px 25px;
+    font-family: inherit;
+    letter-spacing: inherit;
+    outline: none;
+    width: 200px;
+}
+.ErrorText{
+    display: flex;
+    flex-direction: column;
+    color: red;
+}
+.SuccessText{
+    color: green;
+}
+
+.Annotaion{
+    text-align: center;
+    color: var(--breadcrumb);
+}
+
+@media (max-width: 1024px) {
+    .Inputs{
+        flex-direction: column;
+    }
+    .SubmitButton{
+        width: 100%;
+        align-self: auto;
+    }
+    .Annotaion{
+        font-size: 12px;
+    }
+}
