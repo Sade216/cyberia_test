@@ -1,0 +1,77 @@
+.Card {
+    height: 350px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 7px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+.Card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+.Card:hover img {
+    transform: scale(1.1);
+}
+.Overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #0000007e;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+.Card:hover .Overlay {
+    opacity: 1;
+}
+
+.Content {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: var(--button-bg);
+    padding: 20px 15px;
+    border-radius: 7px;
+}
+
+.Content svg{
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    height: 25px;
+    width: 25px;
+    color: var(--accent);
+}
+
+.Description{
+    margin-top: 10px;
+    color: var(--text);
+    font-weight: 300;
+    display: none;
+}
+
+@media (max-width: 1024px) {
+    .Overlay {
+        opacity: 1;
+        background: linear-gradient(transparent, #000000d0);
+    }
+    .Content{
+        top: auto;
+        right: auto;
+        bottom: 15px;
+        background: transparent;
+    }
+    .Content svg{
+        right: auto;
+        left: auto;
+        top: -20px;
+        color: white;
+    }
+    .Description{
+        display: inherit;
+    }
+}
