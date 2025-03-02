@@ -25,8 +25,8 @@ function Projects() {
         const fetchProjectsCategoriesPromise = dispatch(fetchProjectCategories());
 
         return ()=>{
-            fetchProjectsPromise.abort?.()
-            fetchProjectsCategoriesPromise.abort?.()
+            fetchProjectsPromise.abort()
+            fetchProjectsCategoriesPromise.abort()
         }
     }, []);
 
