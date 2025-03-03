@@ -41,7 +41,7 @@
     color: var(--accent);
 }
 
-@media (max-width: 1024) {
+@media (max-width: 1024px) {
     .Container{
         justify-content: center;
         flex-direction: column;
