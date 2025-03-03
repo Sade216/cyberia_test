@@ -23,7 +23,7 @@ bun install
 Для начала работы необходимо обозначить **env** переменные. Для этого в корне проекта необходимо создать файл <code>**.env**</code> и указать следующие значения:
 
 ```bash
-API_URL = "https://YOUR_SERVER.com/api/v1"
+NEXT_PUBLIC_API_URL = "https://YOUR_SERVER.com/api/v1"
 ```
 
 ***
