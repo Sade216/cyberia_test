@@ -63,10 +63,11 @@ export const sendFeedback = createAsyncThunk<TFeedbackResponse, TFeedback, { rej
                 });
                 return rejectWithValue({message: "Некорректные данные формы:", errors: formattedErrors});
             }
-
+            
             const response = await api.post("/feedbacks",{ signal }, {params: parsedData.data});
             return response.data
         } catch (err) {
+            // за валидацию отвечает zod, но ошибки формы (422), которые приходят с сервера обрабатываются ниже
             const {response} = err as AxiosError<TFeedbackResponse>
             const errorMessage = response?.data?.message || "Ошибка отправки данных"
             const ErrorsArray = response?.data.errors
