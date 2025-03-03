@@ -52,9 +52,14 @@
         align-items: center;
         gap: 12px;
         width: 400px;
+        font-size: 13px;
     }
     .Grid{
         column-gap: 15px;
+        font-size: 13px;
+    }
+    .Link{
+        font-size: 13px;
     }
 }
 
