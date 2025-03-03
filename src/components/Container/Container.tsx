@@ -12,8 +12,8 @@ function Container({ children, className, forPage = false }: Props) {
     return (
         <section
             className={`${styles.Container} ${
-                forPage && styles.PageContainer
-            } ${className && className}`}>
+                forPage ? styles.PageContainer : ""
+            } ${className ? className : ""}`}>
             {children}
         </section>
     );

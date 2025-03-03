@@ -16,7 +16,7 @@ function Textarea(props: TTextareaProps) {
     return (
         <div
             className={`${styles.Wrapper} ${
-                props.className && props.className
+                props.className ? props.className : ''
             }`}>
             {!isMobile && (
                 <label

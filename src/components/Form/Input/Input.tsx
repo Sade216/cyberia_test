@@ -22,7 +22,7 @@ function Input(props: TInputProps) {
     return (
         <div
             className={`${styles.Wrapper} ${
-                props.className && props.className
+                props.className ? props.className : ''
             }`}>
             {!isMobile && (
                 <label

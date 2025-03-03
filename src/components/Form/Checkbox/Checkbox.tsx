@@ -12,7 +12,7 @@ type TCheckboxProps = {
 
 function Checkbox(props: TCheckboxProps) {
     return (
-        <div className={`${styles.Wrapper} ${props.className && props.className}`}>
+        <div className={`${styles.Wrapper} ${props.className ? props.className : ''}`}>
             <input
                 className={styles.Checkbox}
                 type="checkbox"

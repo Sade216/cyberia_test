@@ -13,7 +13,7 @@ type TCardProps = {
 
 function ProjectCard({ className, data }: TCardProps) {
     return (
-        <section className={`${className && className} ${styles.Card}`}>
+        <section className={`${className ? className : ''} ${styles.Card}`}>
             <Image
                 loader={() => data.image}
                 src={data.image}
